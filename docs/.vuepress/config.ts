@@ -1,5 +1,5 @@
 /**
- * 提示：如您想使用JS版本的配置文件可参考：https://github.com/xugaoyi/vuepress-theme-vdoing/tree/a2f03e993dd2f2a3afdc57cf72adfc6f1b6b0c32/docs/.vuepress
+ * 提示：如您想使用JS版本的配置文件可参考：https://github.com/liuwenkai01/vuepress-theme-vdoing/tree/a2f03e993dd2f2a3afdc57cf72adfc6f1b6b0c32/docs/.vuepress
  */
 import { resolve } from 'path'
 import { defineConfig4CustomTheme, UserPlugins } from 'vuepress/config'
@@ -30,39 +30,42 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         text: '后端',
         link: '/web/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
         items: [
+          { text: '知识整理', link: '/index/知识整理/' },
+          { text: '学习笔记', link: '/note/学习笔记/' }
           // 说明：以下所有link的值只是在相应md文件头部定义的永久链接（不是什么特殊编码）。另外，注意结尾是有斜杠的
-          {
-            text: '后端文章',
-            items: [
-              { text: 'JavaScript', link: '/pages/8143cc480faf9a11/' },
-            ],
-          },
-          {
-            text: '学习笔记',
-            items: [
-              { text: '《JavaScript教程》', link: '/note/javascript/' },
-              { text: '《JavaScript高级程序设计》', link: '/note/js/' },
-              { text: '《ES6 教程》', link: '/note/es6/' },
-              { text: '《Vue》', link: '/note/vue/' },
-              { text: '《React》', link: '/note/react/' },
-              {
-                text: '《TypeScript 从零实现 axios》',
-                link: '/note/typescript-axios/',
-              },
-              {
-                text: '《Git》',
-                link: '/note/git/',
-              },
-              {
-                text: 'TypeScript',
-                link: '/pages/51afd6/',
-              },
-              {
-                text: 'JS设计模式总结',
-                link: '/pages/4643cd/',
-              },
-            ],
-          },
+          // {
+          //   text: '技术目录',
+          //   items: [
+          //     { text: '技术目录', link: '/index/知识整理/' },
+          //     { text: '学习笔记', link: '/note/学习笔记/' },
+          //   ],
+          // },
+          // {
+          //   text: '学习笔记',
+          //   items: [
+          //     { text: '《JavaScript教程》', link: '/note/javascript/' },
+          //     { text: '《JavaScript高级程序设计》', link: '/note/js/' },
+          //     { text: '《ES6 教程》', link: '/note/es6/' },
+          //     { text: '《Vue》', link: '/note/vue/' },
+          //     { text: '《React》', link: '/note/react/' },
+          //     {
+          //       text: '《TypeScript 从零实现 axios》',
+          //       link: '/note/typescript-axios/',
+          //     },
+          //     {
+          //       text: '《Git》',
+          //       link: '/note/git/',
+          //     },
+          //     {
+          //       text: 'TypeScript',
+          //       link: '/pages/51afd6/',
+          //     },
+          //     {
+          //       text: 'JS设计模式总结',
+          //       link: '/pages/4643cd/',
+          //     },
+          //   ],
+          // },
         ],
       },
       {
@@ -79,8 +82,6 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         items: [
           { text: '技术文档', link: '/pages/9a7ee40fc232253e/' },
           { text: 'GitHub技巧', link: '/pages/4c778760be26d8b3/' },
-          { text: 'Nodejs', link: '/pages/117708e0af7f0bd9/' },
-          { text: '博客搭建', link: '/pages/41f87d890d0a02af/' },
         ],
       },
       {
@@ -116,14 +117,14 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     ],
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
     logo: '/img/tx.png', // 导航栏logo
-    repo: 'liuwenkai01/vuepress-theme-vdoing', // 导航栏右侧生成Github链接
+    repo: 'liuwenkai01', // 导航栏右侧生成Github链接
     searchMaxSuggestions: 10, // 搜索结果显示最大数
     lastUpdated: '上次更新', // 开启更新时间，并配置前缀文字   string | boolean (取值为git提交时间)
     docsDir: 'docs', // 编辑的文件夹
     editLinks: true, // 启用编辑
     editLinkText: '编辑',
 
-    //*** 以下是Vdoing主题相关配置，文档：https://doc.xugaoyi.com/pages/a20ce8/ ***//
+    //*** 以下是Vdoing主题相关配置，文档：https://doc.liuwenkai.com/pages/a20ce8/ ***//
 
     // category: false, // 是否打开分类功能，默认true
     // tag: false, // 是否打开标签功能，默认true
@@ -131,9 +132,9 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     // categoryText: '随笔', // 碎片化文章（_posts文件夹的文章）预设生成的分类值，默认'随笔'
 
     // bodyBgImg: [
-    //   'https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175828.jpeg',
-    //   'https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175845.jpeg',
-    //   'https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175846.jpeg'
+    //   'https://cdn.jsdelivr.net/gh/liuwenkai/image_store/blog/20200507175828.jpeg',
+    //   'https://cdn.jsdelivr.net/gh/liuwenkai/image_store/blog/20200507175845.jpeg',
+    //   'https://cdn.jsdelivr.net/gh/liuwenkai/image_store/blog/20200507175846.jpeg'
     // ], // body背景大图，默认无。 单张图片 String | 多张图片 Array, 多张图片时每隔15秒换一张。
     // bodyBgImgOpacity: 0.5, // body背景图透明度，选值 0.1~ 1.0, 默认0.5
     // titleBadge: false, // 文章标题前的图标是否显示，默认true
@@ -156,8 +157,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // 文章默认的作者信息，(可在md文件中单独配置此信息) string | {name: string, link?: string}
     author: {
-      name: 'xugaoyi', // 必需
-      link: 'https://github.com/xugaoyi', // 可选的
+      name: 'liuwenkai', // 必需
+      link: 'https://github.com/liuwenkai01', // 可选的
     },
 
     // 博主信息 (显示在首页侧边栏)
@@ -167,7 +168,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       slogan: '后端大佬，从业JAVA后端开发10年+经验',
     },
 
-    // 社交图标 (显示于博主信息栏和页脚栏。内置图标：https://doc.xugaoyi.com/pages/a20ce8/#social)
+    // 社交图标 (显示于博主信息栏和页脚栏。内置图标：https://doc.liuwenkai.com/pages/a20ce8/#social)
     social: {
       // iconfontCssFile: '//at.alicdn.com/t/xxx.css', // 可选，阿里图标库在线css文件地址，对于主题没有的图标可自己添加。阿里图片库：https://www.iconfont.cn/
       icons: [
@@ -193,14 +194,14 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     footer: {
       createYear: 2019, // 博客创建年份
       copyrightInfo:
-        'Evan Xu | <a href="https://github.com/xugaoyi/vuepress-theme-vdoing/blob/master/LICENSE" target="_blank">MIT License</a>', // 博客版权信息，支持a标签或换行标签</br>
+        'Evan Xu | <a href="https://github.com/liuwenkai01/vuepress-theme-vdoing/blob/master/LICENSE" target="_blank">MIT License</a>', // 博客版权信息，支持a标签或换行标签</br>
     },
 
     // 扩展自动生成frontmatter。（当md文件的frontmatter不存在相应的字段时将自动添加。不会覆盖已有的数据。）
     extendFrontmatter: {
       author: {
         name: 'liuwenkai01',
-        //link: 'https://github.com/xugaoyi'
+        //link: 'https://github.com/liuwenkai01'
       }
     },
 
@@ -268,7 +269,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     //     },
     //     {
     //       title: '通过百度搜索本站的',
-    //       frontUrl: 'https://www.baidu.com/s?wd=site%3Axugaoyi.com%20',
+    //       frontUrl: 'https://www.baidu.com/s?wd=site%3Aliuwenkai.com%20',
     //     },
     //   ],
     // },
