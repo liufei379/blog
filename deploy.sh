@@ -18,9 +18,10 @@ if [ -z "$GITHUB_TOKEN" ]; then
 else
   msg='来自github actions的自动部署'
   githubUrl=https://liuwenkai01:${GITHUB_TOKEN}@github.com/liuwenkai01/blog.git
-  git config --global user.name "liuwenkai01"
-  git config --global user.email "610725422@qq.com"
 fi
+
+git config --global user.name "liuwenkai01"
+git config --global user.email "610725422@qq.com"
 git init
 git add -A
 git commit -m "${msg}"
