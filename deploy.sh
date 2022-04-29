@@ -14,10 +14,10 @@ echo 'b.liuwenkai.com' > CNAME
 
 if [ -z "$GITHUB_TOKEN" ]; then
   msg='deploy'
-  githubUrl=git@github.com:liuwenkai/vuepress-theme-vdoing.git
+  githubUrl=git@github.com:liuwenkai01/blog.git
 else
   msg='来自github actions的自动部署'
-  githubUrl=https://liuwenkai:${GITHUB_TOKEN}@github.com/liuwenkai/vuepress-theme-vdoing.git
+  githubUrl=https://liuwenkai01:${GITHUB_TOKEN}@github.com/liuwenkai01/blog.git
   git config --global user.name "liuwenkai"
   git config --global user.email "610725422@qq.com"
 fi

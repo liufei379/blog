@@ -1,5 +1,5 @@
 {
-  "name": "theme-vdoing-blog",
+  "name": "blog",
   "version": "1.0.0",
   "scripts": {
     "dev": "vuepress dev docs",
@@ -26,5 +26,9 @@
     "vuepress-plugin-zooming": "^1.1.7",
     "vuepress-theme-vdoing": "^1.11.2",
     "yamljs": "^0.3.0"
-  }
+  },
+  "description": "my blog",
+  "main": "index.js",
+  "repository": "https://github.com/liuwenkai01/blog.git",
+  "author": "liuwenkai <“610725422@qq.com”>"
 }
