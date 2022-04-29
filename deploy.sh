@@ -20,7 +20,6 @@ else
   githubUrl=https://liuwenkai01:${GITHUB_TOKEN}@github.com/liuwenkai01/blog.git
 fi
 
-
 git config --global user.name "liuwenkai01"
 git config --global user.email "610725422@qq.com"
 git init
