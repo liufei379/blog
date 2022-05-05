@@ -162,7 +162,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // 博主信息 (显示在首页侧边栏)
     blogger: {
-      avatar: '/img/df.png',
+      avatar: '/img/tx.jepg',
       name: 'Kevin',
       slogan: '后端大佬，从业JAVA后端开发10年+经验',
     },
