@@ -26,11 +26,12 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     nav: [
       { text: '首页', link: '/' },
       {
-        text: '后端',
+        text: '学习笔记',
         link: '/web/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
         items: [
           { text: '知识整理', link: '/pages/5aa878/' },
-          { text: '学习笔记', link: '/pages/8292d8/' }
+          { text: '学习笔记', link: '/pages/8292d8/' },
+          { text: '容器技术', link: '/pages/035670/' },
           // 说明：以下所有link的值只是在相应md文件头部定义的永久链接（不是什么特殊编码）。另外，注意结尾是有斜杠的
           // {
           //   text: '技术目录',
@@ -67,16 +68,16 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           // },
         ],
       },
+      // {
+      //   text: '运维',
+      //   link: '/ui/',
+      //   items: [
+      //     { text: '容器技术', link: '/pages/035670/' },
+      //     { text: '服务器', link: '/pages/0a83b083bdf257cb/' },
+      //   ],
+      // },
       {
-        text: '运维',
-        link: '/ui/',
-        items: [
-          { text: '容器技术', link: '/pages/035670/' },
-          { text: '服务器', link: '/pages/0a83b083bdf257cb/' },
-        ],
-      },
-      {
-        text: '技术',
+        text: '技术文档',
         link: '/technology/',
         items: [
           { text: '技术文档', link: '/pages/9a7ee40fc232253e/' },
@@ -192,7 +193,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // 页脚信息
     footer: {
-      createYear: 2019, // 博客创建年份
+      createYear: 2022, // 博客创建年份
       copyrightInfo:
         'Kevin | <a href="https://github.com/liuwenkai01/blob/master/LICENSE" target="_blank">MIT License</a>', // 博客版权信息，支持a标签或换行标签</br>
     },
